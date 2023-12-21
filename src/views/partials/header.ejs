@@ -1,0 +1,13 @@
+<%- include('../partials/head') %>
+    <header class="fixed top-0 w-full bg-amber-700 h-16 text-white relative">
+        <img class="logo w-12 absolute left-4 top-2" src="/assets/dinercoffee.svg"></img>
+        <p class="kafe text-xl ml-20 pt-5">KAФE</p>
+        <nav id="header-menu" class="absolute right-20 top-5">
+            <a href="#" class="ml-2">Profile</a>
+            <a href="#" class="ml-2">Messages</a>
+            <a href="#" class="ml-2">Posts</a>
+            <a href="#" class="ml-2">Settings</a>
+            <a href="#" class="ml-2">Logout</a>
+        </nav>
+        <img class="avatar w-12 h-12 border rounded-full absolute right-4 top-2 " src=<%= user.avatar %>>
+    </header>

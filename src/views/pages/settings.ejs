@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+    <main class="mx-auto w-[1024px] text-center">
+        <h1 class="mt-12 text-center text-2xl">Settings</h1>
+        <h2 class="mt-4 text-center text-xl"><%= user.username %></h2>
+        <h2 class="mt-4 text-center text-xl"><%= user.email %></h2>
+        <!-- <div id="request-btn" class="bg-amber-600  border h-8 rounded border text-white text-center w-36 mx-auto mt-12">Upload picture</div> -->
+        <div class="flex justify-center">
+            <!-- <img class="avatar w-12 h-12 border rounded-full absolute right-4 top-2" src=<%= user.avatar %>> -->
+        </div>
+
+        <form class="mt-4 mx-auto" action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="file" id="input-files" class="form-control-file border"/>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+
+class MainController {
+    static contactForm() {
+
+    }
+}
