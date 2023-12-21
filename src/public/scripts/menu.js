@@ -3,14 +3,12 @@ const menuItems = menu.querySelectorAll('a');
 
 console.log(menuItems);
 
-function headerMenuRouter() {
-    menuItems.forEach((item) => {
-        item.addEventListener('click', (e) => {
-            console.log('click');
-            const page = e.target.innerText.toLowerCase();
-            window.location.href = `/${page}`;
-        })
+menuItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const page = e.target.innerText.toLowerCase();
+        window.location.href = `http://${item.host}/users/${page}`;
+        console.log(page);
     })
-}
+})
 
-document.addEventListener('DOMContentLoaded', headerMenuRouter);
+
